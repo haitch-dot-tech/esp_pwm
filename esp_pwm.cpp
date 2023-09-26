@@ -6,7 +6,7 @@
 /* Object (nothing) */
 esp_pwm::esp_pwm() {}
 
-/* Setup LEDs */
+/* Setup PWM Channels */
 void esp_pwm::init(int chan, int pin, int res, int freq) {
     /* Link Private Variables */
     _chan = chan;
@@ -20,13 +20,13 @@ void esp_pwm::init(int chan, int pin, int res, int freq) {
     ledcAttachPin(_pin, _chan);
 }
 
-/* Set LED Brightness */
+/* Set PWM Output */
 void esp_pwm::setOutput(int duty) {
     _duty = duty;
     ledcWrite(_chan, duty);
 }
 
-/* Fade the LED on over a specified duration */
+/* Fade the Output on over a specified duration */
 void esp_pwm::fadeOn(int duration) {
     _duration = duration;
     for(_duty = 0; _duty <= _max_duty; _duty++) {
@@ -35,7 +35,7 @@ void esp_pwm::fadeOn(int duration) {
     }
 }
 
-/* Fade the LED off over a specified duration */
+/* Fade the Output off over a specified duration */
 void esp_pwm::fadeOff(int duration) {
     _duration = duration;
     for(_duty = _max_duty; _duty >= 0; _duty--) {
