@@ -18,6 +18,11 @@ If this doesn't work or spits out errors, copy the files from the inside of the 
 
 
 ## Usage
+### Include Library
+At the top of you sketch, add:
+
+#include <esp_pwm.h>
+
 ### Create Object
 Between #include(s) and setup(), add:
 
