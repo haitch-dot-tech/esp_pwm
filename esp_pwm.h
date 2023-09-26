@@ -3,10 +3,6 @@
 /*
     ESP32 PWM Library
     Created By Henry Hall (HH-au)
-
-    Description:
-    A simple library that can be easily used to 
-    run PWM output on all pins of the ESP32.
 */
 
 #ifndef ESP_PWM_H
@@ -32,6 +28,4 @@ class esp_pwm {
 
         int _duration;
 };
-
-
 #endif
