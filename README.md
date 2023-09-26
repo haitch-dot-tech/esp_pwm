@@ -1,6 +1,8 @@
 # esp_pwm
-A very basic library intended to make using ledc functions easier.
+A very basic library intended to make using ledc/pwm functions easier.
+It also includes the ability to easily fade an LED.
 
+Please leave lots of constructive criticism, this is my first library!
 
 ## Installation
 ### Arduino IDE
@@ -73,3 +75,12 @@ object_name.fadeOff(duration);
 __Where:__
 
 __duration__ = the amount of time that it will take the output to fade from one state to the other (high-low or vice versa). Fading up or down from the current state is not yet available in this library.
+
+### Future Implementation
+In the next few version of this library, I hope to add support for:
+- Fading from the current state to a different (user defined, not HIGH or LOW) state
+- Setting up RGB LED outputs with ease (that may in fact become another library)
+
+### Things that I'd like to add but probably will never make it :P
+- Creating repeatable patterns (stored as an array or something)
+- Smoothing (LEDs don't have a perfect voltage-brightness curve, so you end up with most of the ramp up being before ~75% brightness, and it looks baaad)
