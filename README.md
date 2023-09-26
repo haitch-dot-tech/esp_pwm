@@ -6,7 +6,7 @@ Please leave lots of constructive criticism, this is my first library!
 
 ## Installation
 ### Arduino IDE
-1. Download .ZIP from Code dropdown on this repo's page
+1. Download .ZIP from Code dropdown at the top of this page
 2. Open the Arduino IDE and go to Sketch > Include Library > Add .ZIP Library
 3. If the Arudino IDE outputs "Library installed", you're all good to go!
 4. Go back to Sketch > Include Library and click the library to include it.
