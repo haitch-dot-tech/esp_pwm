@@ -7,9 +7,11 @@ Please leave lots of constructive criticism, this is my first library!
 ## Installation
 ### Arduino IDE
 1. Download .ZIP from Code dropdown at the top of this page
-2. Open the Arduino IDE and go to Sketch > Include Library > Add .ZIP Library
-3. If the Arudino IDE outputs "Library installed", you're all good to go!
+2. Open the Arduino IDE and go to Sketch > Include Library > Add .ZIP Library > Select the file in Explorer and click OK.
+3. If the Arduino IDE outputs "Library installed", you're all good to go!
 4. Go back to Sketch > Include Library and click the library to include it.
+
+If this doesn't work or spits out errors, copy the files from the inside of the .ZIP folder into a new folder called "esp_pwm". Zip this folder and install it into the IDE as explained from step 2 above.
 
 ### PlatformIO
 1. WIP
