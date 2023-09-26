@@ -62,3 +62,14 @@ object_name.setOutput(duty);
 __Where:__
 
 __duty__ = the duty cycle of the PWM output
+
+### Fading the signal On or Off
+The esp_pwm library has the ability to dim an LED with ease. Just use:
+
+object_name.fadeOn(duration);
+
+object_name.fadeOff(duration);
+
+__Where:__
+
+__duration__ = the amount of time that it will take the output to fade from one state to the other (high-low or vice versa). Fading up or down from the current state is not yet available in this library.
