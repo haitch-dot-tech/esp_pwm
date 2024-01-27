@@ -36,7 +36,7 @@ Where "object_name" shows how you will call the library in the sketch.
 3. esp_pwm
 4. motor (if you are to be using one, yes it is compatible)
 
-You can even have multiplt objects at once, such as:
+You can even have multiple objects at once, such as:
 
 esp_pwm led1;
 
