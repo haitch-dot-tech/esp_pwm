@@ -2,8 +2,6 @@
 A very basic library intended to make using ledc/pwm functions easier.
 It also includes the ability to easily fade an LED.
 
-Please leave lots of constructive criticism, this is my first library!
-
 ## Installation
 ### Arduino IDE
 1. Download .ZIP from Code dropdown at the top of this page
@@ -91,3 +89,4 @@ In the next few version of this library, I hope to add support for:
 ### Things that I'd like to add but probably will never make it :P
 - Creating repeatable patterns (stored as an array or something)
 - Smoothing (LEDs don't have a perfect voltage-brightness curve, so you end up with most of the ramp up being before ~75% brightness, and it looks baaad)
+
